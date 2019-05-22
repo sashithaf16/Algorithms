@@ -60,6 +60,12 @@ public class MaxflowUsingFordFulkerson {
                     }
                 }
 
+                System.out.println("Please Enter the Source S : ");
+                int source = input.nextInt();
+
+                System.out.println("Please Enter the Sink T : ");
+                int sink = input.nextInt();
+
                 System.out.println("********************************************");
 
                 System.out.println("         ADJACENCY MATRIX FOR GRAPH          ");
@@ -79,7 +85,7 @@ public class MaxflowUsingFordFulkerson {
 
                 MaxflowUsingFordFulkerson m = new MaxflowUsingFordFulkerson(allNodes);
                 System.out.println("The maximum possible flow of this graph " +
-                        m.maximumFlowFordFulkeron(capacityArray, 0, 5));
+                        m.maximumFlowFordFulkeron(capacityArray, source, sink));
 
 
             } else {
